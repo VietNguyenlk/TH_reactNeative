@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        console.table("Coding Challenge #1")
+            // § Data 1: Marks weights 78 kg and is 1.69 m tall.
+            // John weights 92 kg and is 1.95 m tall.
+
+        var markMass1 = 78;
+        var johnMass1 = 92;
+        var markHeight1 = 1.69;
+        var johnHeight1 = 1.95;
+
+        function BMI(a, b) {
+            bmi = a / (b * b)
+            return bmi
+        }
+
+        var bmiMark1 = BMI(markMass1, markHeight1)
+        console.log(bmiMark1)
+
+        var bmiJohn1 = BMI(johnMass1, johnHeight1)
+        console.log(bmiJohn1)
+            // boolean = true if bmiMark > bmiJohn
+        console.log(Boolean(bmiMark1 > bmiJohn1))
+
+
+        // task 2§ Data 2: Marks weights 95 kg and is 1.88 m tall. 
+        // John weights 85 kg and is 1.76
+        //  m tall.
+        var markMass2 = 95;
+        var johnMass2 = 85;
+        var markHeight2 = 1.88;
+        var johnHeight2 = 1.76;
+
+        var bmiMark2 = BMI(markMass2, markHeight2)
+        console.log(bmiMark2)
+
+        var bmiJohn2 = BMI(johnMass2, johnHeight2)
+        console.log(bmiJohn2)
+            // boolean = true if bmiMark > bmiJohn
+        console.log(Boolean(bmiMark2 > bmiJohn2))
+
+        console.warn("Coding Challenge #2")
+        if (bmiJohn1 > bmiMark1) {
+            console.log("John's BMI is higher than Mark's!")
+
+        } else {
+            console.log("Mark's BMI is higher than John's!")
+        }
+
+        if (bmiJohn1 > bmiMark1) {
+            console.log("John's (" + Math.round(bmiJohn1 * 100) / 100 + ") BMI is higher than Mark's (" + Math.round(bmiMark1 * 100) / 100 + ")")
+
+        } else {
+            console.log("Mark's BMI " + Math.round(bmiMark1 * 100) / 100 + " is higher than John's! " + Math.round(bmiJohn1 * 100) / 100 + "")
+        }
+
+        console.warn("Coding Challenge #3")
+    </script>
+</head>
+
+<body>
+    <h1>Hello</h1>
+
+</body>
+
+</html>
